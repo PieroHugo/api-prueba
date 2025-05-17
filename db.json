@@ -1,252 +1,234 @@
 {
-  "profiles": [
+  "profile": [
     {
       "id": 1,
-      "name": "John Doe",
-      "email": "johndoe@gmail.com",
-      "ruc": "123456789",
-      "inventory": [
-        {
-          "productId": "prod1",
-          "name": "Product 1",
-          "price": 100,
-          "stock": 10,
-          "urlToImage": "https://via.placeholder.com/150"
-        },
-        {
-          "productId": "prod2",
-          "name": "Product 2",
-          "price": 200,
-          "stock": 20,
-          "urlToImage": "https://via.placeholder.com/150"
-        },
-        {
-          "productId": "prod3",
-          "name": "Product 3",
-          "price": 300,
-          "stock": 30,
-          "urlToImage": "https://via.placeholder.com/150"
-        }
-      ]
+      "name": "Sergio Gino",
+      "lastname": "Julca Minaya",
+      "phoneNumber": "999999999",
+      "dni": "12345678",
+      "gender": "Male"
     },
     {
       "id": 2,
-      "name": "Michael Jackson",
-      "email": "michaeljackson@gmail.com",
-      "ruc": "987654321",
-      "inventory": [
-        {
-          "productId": "prod1",
-          "name": "Product 1",
-          "price": 400,
-          "stock": 40,
-          "urlToImage": "https://via.placeholder.com/150"
-        },
-        {
-          "productId": "prod2",
-          "name": "Product 2",
-          "price": 500,
-          "stock": 10,
-          "urlToImage": "https://via.placeholder.com/150"
-        },
-        {
-          "productId": "prod3",
-          "name": "Product 3",
-          "price": 600,
-          "stock": 60,
-          "urlToImage": "https://via.placeholder.com/150"
-        },
-        {
-          "productId": "prod4",
-          "name": "Product 4",
-          "price": 700,
-          "stock": 70,
-          "urlToImage": "https://via.placeholder.com/150"
-        },
-        {
-          "productId": "prod5",
-          "name": "Product 5",
-          "price": 800,
-          "stock": 80,
-          "urlToImage": "https://via.placeholder.com/150"
-        },
-        {
-          "productId": "prod6",
-          "name": "Product 6",
-          "price": 900,
-          "stock": 90,
-          "urlToImage": "https://via.placeholder.com/150"
-        }
-      ]
+      "name": "Vitaly Arturo",
+      "lastname": "Baca Camargo",
+      "phoneNumber": "111111111",
+      "dni": "91011121",
+      "gender": "Male"
     }
   ],
-  "companies": [
+  "users": [
     {
       "id": 1,
-      "name": "Company 1",
-      "urlToImage": "https://via.placeholder.com/150"
+      "username": "Sergio",
+      "email": "sergiogino8@gmail.com",
+      "password": 123456,
+      "plan": "standard"
     },
     {
       "id": 2,
-      "name": "Company 2",
-      "urlToImage": "https://via.placeholder.com/150"
+      "name": "Vitaly",
+      "email": "vitalybaca92@gmail.com",
+      "password": 123456,
+      "plan": "pro"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": 1,
+      "name": "Vitaly's vehicle",
+      "brand": "Toyota",
+      "model": "Rush",
+      "mileage": "2650",
+      "year": "2019",
+      "Mileage": "2650"
+    }
+  ],
+  "statusCheck": [
+    {
+      "id": 1,
+      "engine": 75,
+      "transmission": 100,
+      "brakes": 100,
+      "electrical": 61,
+      "steering": 100,
+      "suspension": 90,
+      "fuel": 87,
+      "refrigeration": 80,
+      "vehicleId": 1
+    }
+  ],
+  "failures": [
+    {
+      "id": 1,
+      "title": "Low system voltage",
+      "description": "The system detected low voltage levels, which could be caused by a malfunctioning speed sensor in the transmission",
+      "solutions": "Inspect the speed sensor and replace it if damaged.",
+      "isSolved": true,
+      "vehicleId": 1
+    },
+    {
+      "id": 2,
+      "title": "Low coolant temperature",
+      "description": "This issue indicates that the oil level or oil pressure sensor is reporting abnormally low values.",
+      "solutions": "Check the oil level and pressure sensor. If the problem persists, take the vehicle to a workshop immediately.",
+      "isSolved": false,
+      "vehicleId": 1
     },
     {
       "id": 3,
-      "name": "Company 3",
-      "urlToImage": "https://via.placeholder.com/150"
+      "title": "Low oil pressure",
+      "description": "This issue indicates that the oil level or oil pressure sensor is reporting abnormally low values.",
+      "solutions": "Check the oil level and pressure sensor. If the problem persists, take the vehicle to a workshop immediately.",
+      "isSolved": true,
+      "vehicleId": 1
     },
     {
       "id": 4,
-      "name": "Company 4",
-      "urlToImage": "https://via.placeholder.com/150"
+      "title": "Fuel sensor out of range",
+      "description": "The fuel level sensor is sending readings that are not within the expected values. This might affect fuel gauge accuracy.",
+      "solutions": "Check the fuel tank float or sensor. It may be stuck and require servicing or replacement.",
+      "isSolved": false,
+      "vehicleId": 1
+    }
+  ],
+  "report": [
+    {
+      "id": 1,
+      "vehicleId": 1,
+      "title": "Low system voltage",
+      "description": "Check the speed sensor in the transmission.",
+      "suggestedSolution": "It may require replacement if damaged.",
+      "comment": "asas"
     },
+    {
+      "id": 2,
+      "vehicleId": 1,
+      "title": "Low coolant temperature",
+      "description": "Check the engine thermostat.",
+      "suggestedSolution": "If it’s stuck open, it needs to be replaced.",
+      "comment": "ugiv"
+    },
+    {
+      "id": 3,
+      "vehicleId": 1,
+      "title": "Low oil pressure",
+      "description": "Check the oil level and pressure sensor.",
+      "suggestedSolution": "Do not continue driving if the problem persists. Take the vehicle to a workshop immediately.",
+      "comment": ""
+    },
+    {
+      "id": 4,
+      "vehicleId": 1,
+      "title": "Fuel sensor out of range",
+      "description": "Check the fuel tank float or sensor.",
+      "suggestedSolution": "It could be stuck.",
+      "comment": ""
+    }
+  ],
+
+  "simple_issues": [
+    {
+      "id": 1,
+      "vehicleId": 1,
+      "description": "Low tire pressure",
+      "urgency": "moderate"
+    },
+
+    {
+      "id": 2,
+      "vehicleId": 1,
+      "description": "Low battery",
+      "urgency": "moderate"
+    },
+
+    {
+      "id": 3,
+      "vehicleId": 1,
+      "description": "Check oil level",
+      "urgency": "moderate"
+    },
+
+    {
+      "id": 4,
+      "vehicleId": 1,
+      "description": "Coolant level low",
+      "urgency": "moderate"
+    },
+
     {
       "id": 5,
-      "name": "Company 5",
-      "urlToImage": "https://via.placeholder.com/150"
-    }
-  ],
-  "invoices": [
-    {
-      "id": 1,
-      "amount": 100,
-      "date": "20-09-2024",
-      "profileId": 1
-    }
-  ],
-  "monitoring": [
-    {
-      "id": 1,
-      "name": "Product 1",
-      "urlToImage": "https://via.placeholder.com/150",
-      "lastMaintenance": "20-09-2024",
-      "status": "active",
-      "maintenance": [
-        {
-          "id": 101,
-          "date": "20-09-2024",
-          "technician": "John Doe",
-          "issueType": "Firmware Update",
-          "description": "Updated to firmware version 4.2.1 to address connectivity issues.",
-          "additionalInfo": "System rebooted and tested successfully."
-        },
-        {
-          "id": 102,
-          "date": "15-07-2024",
-          "technician": "Jane Smith",
-          "issueType": "Firmware Update",
-          "description": "Calibrated sensors for accurate readings.",
-          "additionalInfo": "No issues detected during calibration."
-        },
-        {
-          "id": 103,
-          "date": "02-05-2024",
-          "technician": "Michael Lee",
-          "issueType": "Power Supply Issue",
-          "description": "Replaced power supply unit after unexpected shutdowns.",
-          "additionalInfo": "System stable after replacement."
-        }
-      ]
+      "vehicleId": 1,
+      "description": "Dirty air filter",
+      "urgency": "mild"
     },
+
     {
-      "id": 2,
-      "name": "Product 2",
-      "urlToImage": "https://via.placeholder.com/150",
-      "lastMaintenance": "04-08-2024",
-      "status": "disabled",
-      "maintenance": [
-        {
-          "id": 201,
-          "date": "04-08-2024",
-          "technician": "Jane Smith",
-          "issueType": "Hardware Replacement",
-          "description": "Replaced faulty power supply unit.",
-          "additionalInfo": "System is currently disabled awaiting further diagnostics."
-        },
-        {
-          "id": 202,
-          "date": "10-03-2024",
-          "technician": "John Doe",
-          "issueType": "Software Bug",
-          "description": "Fixed issue causing periodic crashes.",
-          "additionalInfo": "Applied patch and tested successfully."
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Product 3",
-      "urlToImage": "https://via.placeholder.com/150",
-      "lastMaintenance": "15-09-2024",
-      "status": "in-maintenance",
-      "maintenance": [
-        {
-          "id": 301,
-          "date": "15-09-2024",
-          "technician": "Mike Johnson",
-          "issueType": "Preventive Maintenance",
-          "description": "Performed routine check-up and cleaned internal components.",
-          "additionalInfo": "No issues detected; system is operating normally."
-        },
-        {
-          "id": 302,
-          "date": "01-02-2024",
-          "technician": "Emily Davis",
-          "issueType": "Preventive Maintenance",
-          "description": "Replaced backup battery for uninterrupted operation.",
-          "additionalInfo": "Battery functioning correctly after replacement."
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Product 4",
-      "urlToImage": "https://via.placeholder.com/150",
-      "lastMaintenance": "10-09-2024",
-      "status": "error",
-      "maintenance": [
-        {
-          "id": 401,
-          "date": "10-09-2024",
-          "technician": "Alex Brown",
-          "issueType": "Critical Error",
-          "description": "Detected critical error in the main controller unit.",
-          "additionalInfo": "The unit failed to start after the error. Needs replacement of controller unit and reprogramming."
-        },
-        {
-          "id": 402,
-          "date": "05-04-2024",
-          "technician": "David Green",
-          "issueType": "Network Configuration",
-          "description": "Reconfigured network settings to resolve connectivity issues.",
-          "additionalInfo": "Tested and verified network stability."
-        }
-      ]
+      "id": 6,
+      "vehicleId": 1,
+      "description": "Low windshield washer fluid",
+      "urgency": "mild"
     }
   ],
 
-  "ordering-machinery": [
+  "technical_errors": [
     {
       "id": 1,
-      "name": "Machine 1",
-      "urlToImage": "https://via.placeholder.com/150"
+      "vehicleId": 1,
+      "code": "P0562",
+      "description": "Low system voltage",
+      "suggestion": "Check the speed sensor in the transmission. It may require replacement if damaged.",
+      "urgency": "critical"
+    },
+
+    {
+      "id": 2,
+      "vehicleId": 1,
+      "code": "P0522",
+      "description": "Low oil pressure",
+      "suggestion": "Check the oil level and pressure sensor. Do not continue driving if the problem persists.",
+      "urgency": "critical"
+    },
+
+    {
+      "id": 3,
+      "vehicleId": 1,
+      "code": "P0128",
+      "description": "Low coolant temperature",
+      "suggestion": "Check the engine thermostat. If it’s stuck open, it needs to be replaced.",
+      "urgency": "moderate"
+    },
+
+    {
+      "id": 4,
+      "vehicleId": 1,
+      "code": "P0463",
+      "description": "Fuel sensor out of range",
+      "suggestion": "Check the fuel tank float or sensor. It could be stuck.",
+      "urgency": "mild"
+    }
+  ],
+
+  "bad_practices": [
+    {
+      "id": 1,
+      "vehicleId": 1,
+      "description": "Not checking tire pressure regularly."
     },
     {
       "id": 2,
-      "name": "Machine 2",
-      "urlToImage": "https://via.placeholder.com/150"
+      "vehicleId": 1,
+      "description": "Driving with overloaded vehicle."
     },
     {
       "id": 3,
-      "name": "Machine 3",
-      "urlToImage": "https://via.placeholder.com/150"
+      "vehicleId": 1,
+      "description": "Ignoring seasonal temperature changes."
     },
     {
       "id": 4,
-      "name": "Machine 4",
-      "urlToImage": "https://via.placeholder.com/150"
+      "vehicleId": 1,
+      "description": "Ignoring early symptoms like strange noises or smells."
     }
   ]
-
 }
